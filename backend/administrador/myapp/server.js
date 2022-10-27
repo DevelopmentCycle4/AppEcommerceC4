@@ -1,0 +1,7 @@
+var express = require('express');
+var app =express();
+
+
+app.listen(3000,function(){
+    console.log('serveris listening on port  3000.Ready to aaccept request!');
+});

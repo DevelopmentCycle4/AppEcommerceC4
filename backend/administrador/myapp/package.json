@@ -1,5 +1,23 @@
 {
-  "dependencies": {
-    "express": "^4.18.2"
-  }
+  "name": "appecommercec4",
+  "version": "1.0.0",
+  "description": "tienda online",
+  "main": "init.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DevelopmentCycle4/AppEcommerceC4.git"
+  },
+  "keywords": [
+    "tienda",
+    "online"
+  ],
+  "author": "k0106",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DevelopmentCycle4/AppEcommerceC4/issues"
+  },
+  "homepage": "https://github.com/DevelopmentCycle4/AppEcommerceC4#readme"
 }
