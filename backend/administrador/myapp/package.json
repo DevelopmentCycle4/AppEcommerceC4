@@ -1,18 +1,5 @@
 {
-  "name": "init",
-  "version": "1.0.0",
-  "description": "init",
-  "main": "init.js",
-  "scripts": {
-    "test": "$ npm install express --save"
-  },
-  "repository": {
-    "type": "git",
-    "url": "npm install express"
-  },
-  "keywords": [
-    "desarrollador1234--"
-  ],
-  "author": "k0106",
-  "license": "ISC"
+  "dependencies": {
+    "express": "^4.18.2"
+  }
 }
