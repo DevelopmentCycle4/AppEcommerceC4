@@ -27,9 +27,9 @@ dist-ssr
 
 # dependencies
 /node_modules
-/frontend-admin/.yarn
-/frontend-admin/node_modules
-/frontend-client/node_modules
+/frontend/admin/.yarn
+/frontend/admin/node_modules
+/frontend/client/node_modules
 /backend/node_modules
 /.pnp
 .pnp.js
