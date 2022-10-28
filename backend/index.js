@@ -14,5 +14,5 @@ app.listen(port,()=>{
     console.log('Estoy ejecutandome en http://localhost:${port}')
 })
 
-GET=>micomputadora/pokemones=>Devuelve los pokemones
-POST=>micomputadora/pokemones con {pokemon}=>guarda el pokemon
+GET-> micomputadora/pokemones->Devuelve los pokemones
+POST-> micomputadora/pokemones con {pokemon}->guarda el pokemon
