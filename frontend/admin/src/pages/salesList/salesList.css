@@ -1,0 +1,27 @@
+.salesList{
+    flex: 4;
+}
+
+.salesWidgets{
+    display: flex;
+    margin: 20px;
+}
+
+.salesTitleContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin: 10px;
+  }
+
+  .salesTitle {
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(105, 105, 105);
+    color:white;
+    font-size: 35px;
+    font-weight: 700;
+    width: 1000px;
+  }
