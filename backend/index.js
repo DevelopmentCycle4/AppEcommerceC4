@@ -1,9 +1,8 @@
-const express=require('express')
-const cors=require('cors')
+import express  from 'express'
+import {consultar} from './db.js'
 
 const app=express()
-const port= 3000
-
+const port= 4000
 
 
 app.get('./prueba',(req,res)=>{
@@ -14,4 +13,5 @@ app.listen(port,()=>{
     console.log('Estoy ejecutandome en http://localhost:${port}')
 })
 
+consultar()
 
