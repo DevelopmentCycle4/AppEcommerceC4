@@ -10,7 +10,7 @@ app.get('./prueba',(req,res)=>{
 })
 
 app.listen(port,()=>{
-    console.log('Estoy ejecutandome en http://localhost:${port}')
+    console.log(`Estoy ejecutandome en http://localhost:${port}`)
 })
 
 consultar()
