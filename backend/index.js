@@ -1,17 +1,16 @@
-import express  from 'express'
-import {consultar} from './db.js'
-
-const app=express()
-const port= 4000
+const app =require("app")
+const connectDatabase =require("./config/database");
 
 
-app.get('./prueba',(req,res)=>{
-    res.send('Servidor listo')
+
+//Setear el archivo de configuracion
+const dotenv=require("dotenv");
+dotenv.config({path:'back/config/config.env'})
+
+//configurar bases de datos
+connectDatabase();
+
+//llamemos al servidor
+const server=app.listen(process.env.PORT,() => {
+        console.log(`Servidor iniciado en el puerto: ${process.env.PORT} en modo: ${process.env.NODE_ENV}`)
 })
-
-app.listen(port,()=>{
-    console.log(`Estoy ejecutandome en http://localhost:${port}`)
-})
-
-consultar()
-
