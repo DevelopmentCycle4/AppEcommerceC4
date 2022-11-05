@@ -44,7 +44,7 @@ const productosSchema=mongoose.Schema({
                 "Tenis4",
                 "Tenis5",
                 "OtrosProductos",
-                      ]
+                ]
         }
     },
     vendedor:{
