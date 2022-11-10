@@ -1,4 +1,4 @@
-const mongoose=require("mongoose")
+import mongoose from "mongoose";
 
 const productosSchema=mongoose.Schema({
     nombre:{
@@ -10,15 +10,20 @@ const productosSchema=mongoose.Schema({
     precio:{
         type: Number,
         required:[true,"Por favor registre el precio del producto."],
+        trim:true,
         maxLength:[8, "El precio del producto no puede estar por encima de 99'999.999"],
         default: 0.0
+        
     },
     descripcion:{
       type:String,
-      required:[true,"Por favor registre una descripcion para el producto."]
+      required:[true,"Por favor registre una descripcion para el producto."],
+      trim:true,
+      
     },
     calificacion:{
         type: Number,
+        trim:true,
         default: 0
     },
     imagen:[
@@ -36,6 +41,7 @@ const productosSchema=mongoose.Schema({
     categoria:{
         type:String,
         required:[true,"Por favor seleccione la categoria del producto."],
+        trim:true,
         enum:{
             values:[
                 "Tenis1",
@@ -49,16 +55,19 @@ const productosSchema=mongoose.Schema({
     },
     vendedor:{
         type:String,
-        required:[true,"Por favor registre el vendedor de producto"]
+        required:[true,"Por favor registre el vendedor de producto"],
+        trim:true,
     },
     inventario:{
         type: Number,
         required:[true, "Por favor registre el stock del producto"],
+        trim:true,
         maxLength:[5,"Cantidad maxima del producto no puede sobrepasar 99999"],
         default:0
     },
     numCalificaciones:{
         type:Number,
+        trim:true,
         default:0
     },
     opiniones:[
@@ -79,6 +88,7 @@ const productosSchema=mongoose.Schema({
     ],
     fechaCreacion:{
         type:Date,
+        trim:true,
         default:Date.now
     }
 
