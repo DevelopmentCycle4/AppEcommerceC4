@@ -7,10 +7,10 @@ const fetch =(url) => import ("node-fetch").then(({default: fetch}) =>fetch(url)
 
 // Lista de Productos
 
-exports.getProductos = catchAsyncErrors(async (req, res, next) =>{
+exports.getProducts = catchAsyncErrors(async (req, res, next) =>{
 
     resPerPage = 3;
-    const productsCount = await producto.countDocuments();
+    const productsCount = await productos.countDocuments();
 
     const apiFeatures = new APIFeatures(producto.find(), req.query)
         .search()
